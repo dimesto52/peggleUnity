@@ -28,20 +28,28 @@ public class shoot : MonoBehaviour
         lastFire += Time.deltaTime;
 
         //verification de touche appuyer et du timer
-        if (Input.GetMouseButtonDown(0))
-            if (lastFire > fireRate)
-            {
-                //remise a zero du timer
-                lastFire = lastFire % fireRate;
+        if (compterBall.compter.numBall > 0)
+            if (Input.GetMouseButtonDown(0))
+                if (lastFire > fireRate)
+                {
+                    //remise a zero du timer
+                    lastFire = lastFire % fireRate;
 
-                //instansiation de l'objet a tirer
-                GameObject oball = GameObject.Instantiate(ball);
-                oball.transform.position = transform.position - transform.up * offset;
+                    //instansiation de l'objet a tirer
+                    GameObject oball = GameObject.Instantiate(ball);
+                    oball.transform.position = transform.position - transform.up * offset;
 
-                //direction de l'objet a tirer
-                oball.GetComponent<moveBall>().direction = -transform.up;
+                    //retire une balle de la liste
+                    compterBall.compter.RemoveBall();
 
-            }
+                    oball.GetComponent<Rigidbody2D>().AddForce(-transform.up * 9.81f,ForceMode2D.Impulse);
+
+                    /*
+                    //direction de l'objet a tirer
+                    oball.GetComponent<moveBall>().direction = -transform.up;
+                    */
+
+                }
 
 
     }
