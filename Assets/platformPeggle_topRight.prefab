@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5917680867980462646}
   - component: {fileID: 3724700624225657954}
   - component: {fileID: 4330109796071275800}
+  - component: {fileID: -5547122571851998869}
   m_Layer: 0
   m_Name: platformPeggle_topRight
   m_TagString: Untagged
@@ -137,5 +138,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa794b4a6332b37488037285dfc1405d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 3
+--- !u!114 &-5547122571851998869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7669355940394037673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d442832b8ad2f4c4e85f77a5b7b97be5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

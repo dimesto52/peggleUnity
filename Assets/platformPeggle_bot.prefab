@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8209808550989376398}
   - component: {fileID: 3344913984309686343}
   - component: {fileID: -4037192047186805465}
+  - component: {fileID: 3412051399828165742}
   m_Layer: 0
   m_Name: platformPeggle_bot
   m_TagString: Untagged
@@ -136,4 +137,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa794b4a6332b37488037285dfc1405d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limeToDestroy: 3
+  timeToDestroy: 3
+--- !u!114 &3412051399828165742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7673095322694966892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d442832b8ad2f4c4e85f77a5b7b97be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

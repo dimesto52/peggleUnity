@@ -20,5 +20,6 @@ public class bucketCompter : MonoBehaviour
 
         compterBall.compter.AddBall();
         GameObject.Destroy(collision.gameObject);
+        onBoardBallCount.Count--;
     }
 }

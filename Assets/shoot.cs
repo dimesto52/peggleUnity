@@ -28,7 +28,7 @@ public class shoot : MonoBehaviour
         lastFire += Time.deltaTime;
 
         //verification de touche appuyer et du timer
-        if (compterBall.compter.numBall > 0)
+        if (compterBall.compter.numBall > 0 && onBoardBallCount.Count <= 0 && leftPlatformCount.Count > 0)
             if (Input.GetMouseButtonDown(0))
                 if (lastFire > fireRate)
                 {

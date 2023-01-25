@@ -18,6 +18,7 @@ public class outDestroy : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject.Destroy(collision.gameObject); 
+        if(collision.gameObject != null)
+        GameObject.Destroy(collision.gameObject);
     }
 }
